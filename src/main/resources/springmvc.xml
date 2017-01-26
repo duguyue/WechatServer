@@ -40,7 +40,7 @@
 		<property name="url"
 			value="jdbc:mysql://localhost:3306/affairmanage?useUnicode=true&amp;characterEncoding=UTF-8"></property>
 		<property name="username" value="root"></property>
-		<property name="password" value="686175"></property>
+		<property name="password" value="123456"></property>
 		<property name="maxActive" value="100"></property>
 		<property name="maxIdle" value="30"></property>
 		<property name="maxWait" value="500"></property>
@@ -54,40 +54,4 @@
 		</property>
 	</bean>
 
-
-	<bean id="affairService" class="org.lindl.service.AffairService">
-		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
-	</bean>
-	<bean id="affairTypeService" class="org.lindl.service.AffairTypeService">
-		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
-	</bean>
-	<bean id="noteBookService" class="org.lindl.service.NoteBookService">
-		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
-	</bean>
-	<bean id="userService" class="org.lindl.service.UserService">
-		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
-	</bean>
-
-
-	<bean id="incomeDao" class="org.lindl.dao.IncomeDao">
-		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
-	</bean>
-	<bean id="incomeTypeDao" class="org.lindl.dao.IncomeTypeDao">
-		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
-	</bean>
-	<bean id="expenseDao" class="org.lindl.dao.ExpenseDao">
-		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
-	</bean>
-	<bean id="expenseTypeDao" class="org.lindl.dao.ExpenseTypeDao">
-		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
-	</bean>
-
-	<bean id="incomeService" class="org.lindl.service.IncomeService">
-	</bean>
-	<bean id="incomeTypeService" class="org.lindl.service.IncomeTypeService">
-	</bean>
-	<bean id="expenseService" class="org.lindl.service.ExpenseService">
-	</bean>
-	<bean id="expenseTypeService" class="org.lindl.service.ExpenseTypeService">
-	</bean>
 </beans>
